@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "expense-mobile",
+    "slug": "expense-mobile",
+    "scheme": "expensemobile",
+    "version": "1.0.0",
+    "sdkVersion": "51.0.0",
+    "platforms": ["ios", "android", "web"],
+    "extra": {
+      "API_URL": "http://localhost:1337/api"
+    }
+  }
+}
