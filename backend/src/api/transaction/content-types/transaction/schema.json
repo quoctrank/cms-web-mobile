@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "singularName": "transaction",
+    "pluralName": "transactions",
+    "displayName": "Transaction"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "amount": {
+      "type": "integer",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "expense",
+        "income",
+        "transfer"
+      ],
+      "required": true
+    },
+    "booked_at": {
+      "type": "date",
+      "required": true
+    },
+    "note": {
+      "type": "text"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "transactions"
+    },
+    "wallet": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::wallet.wallet",
+      "inversedBy": "transactions"
+    },
+    "tags": {
+      "type": "json"
+    }
+  }
+}

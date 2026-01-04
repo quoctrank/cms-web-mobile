@@ -1,0 +1,23 @@
+{
+  "name": "expense-api",
+  "private": true,
+  "version": "0.2.0",
+  "type": "commonjs",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build"
+  },
+  "dependencies": {
+    "@strapi/plugin-users-permissions": "^5.23.3",
+    "@strapi/strapi": "^5.23.0",
+    "better-sqlite3": "^11.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.2",
+    "styled-components": "^6.1.19"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.2"
+  }
+}
